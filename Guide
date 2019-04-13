@@ -1,0 +1,19 @@
+How to setup/install OpenMRS
+- Copy the openmrs.war file to (Tomcat9.0/webapp)
+- Create database under name: openmrs
+- Create user with credential as: username: openmrs_user password: secret
+
+- Run Tomcat service
+- Open browser and enter following path: http://localhost:8080/openmrs
+- Follow the wizard and setup the proper options using Advanced installation option.
+- Set Login user credentials as: admin/Admin123
+
+- stop the tomcat service after completion the openmrs installation
+- Copy the Module and owa folder to (Application Data/OpenMRS/)
+- If error occours then stop the tomcat service and delete the logfiles of tomcat and restart the tomcat service
+
+- You will see the login page of OpenMRS... successfully setup
+
+----------------------------------------------------------------------
+
+
