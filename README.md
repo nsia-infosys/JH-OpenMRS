@@ -2,8 +2,9 @@
 OpenMRS for Jamhuriyat Hospital
 
 - OpenMRS Core v2.1.4
-- Reference Application v1.8
+- Reference Application v2.9.0
 
+https://wiki.openmrs.org/display/RES/Release+Notes#ReleaseNotes-IntroducingReferenceApplication2.9.0
 
 # Tools Specification:
 - 
