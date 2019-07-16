@@ -1,0 +1,17 @@
+<table ng-if="$ctrl.simpleEncs.length != 0">
+    <thead>
+        <tr>
+            <th>Encounter</th>
+            <th ng-repeat="(key,value) in $ctrl.conceptsMap">{{value.display}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="encounter in $ctrl.simpleEncs| orderBy: '-encounterDatetime'">
+            <th style="white-space: nowrap;">{{encounter.encounterDatetime | date: $ctrl.config.dateFormat}}</th>
+            <th ng-repeat="(key,value) in $ctrl.conceptsMap">
+                {{ encounter.obs[key] ? $ctrl.displayObs(encounter.obs[key]) : '' }}
+            </th>
+        </tr>
+    </tbody>
+</table>
+<p ng-if="$ctrl.simpleEncs.length == 0">None</p>

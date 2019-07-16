@@ -9,7 +9,7 @@ How to setup/install OpenMRS
 - Set Login user credentials as: admin/Admin123
 
 - stop the tomcat service after completion the openmrs installation
-- Copy the Module and owa folder to (Application Data/OpenMRS/)
+- Copy the Module and owa folder to (Application Data/OpenMRS/ or ~/.OpenMRS/)
 - If error occours then stop the tomcat service and delete the logfiles of tomcat and restart the tomcat service
 
 - You will see the login page of OpenMRS... successfully setup
