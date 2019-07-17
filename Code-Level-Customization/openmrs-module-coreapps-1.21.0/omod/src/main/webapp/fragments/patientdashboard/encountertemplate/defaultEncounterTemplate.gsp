@@ -41,15 +41,7 @@
 	    </li>
 	</ul>
 
-	<span>
-		{{ config.printUrl = "/openmrs/module/xreports/fillParameter.form?reportId=&formId=" }}
-		<form target="_blank" method="POST" action="{{- config.printUrl }}" >
-			<input type="hidden" name="" value="">
-			<button type="submit" >
-				<i class="printEncounter icon-pencil" data-patient-id="{{- patient.id }}" data-encounter-id="{{- encounter.encounterId }}" data-edit-url="{{- config.printUrl }}" title="${ ui.message("coreapps.print") }"></i>
-			</button>
-		</form>
-		
+	<span>		
         {{ if ( (config.editable == null || config.editable) && encounter.canEdit) { }}
             <i class="viewEncounter view-action icon-file-alt" data-mode="view" data-patient-id="{{- patient.id }}" data-encounter-id="{{- encounter.encounterId }}" {{ if (config.viewUrl) { }} data-view-url="{{- config.viewUrl }}" {{ } }} title="${ ui.message("coreapps.view") }"></i>
             <i class="editEncounter edit-action icon-pencil" data-patient-id="{{- patient.id }}" data-encounter-id="{{- encounter.encounterId }}" {{ if (config.editUrl) { }} data-edit-url="{{- config.editUrl }}" {{ } }} title="${ ui.message("coreapps.edit") }"></i>
